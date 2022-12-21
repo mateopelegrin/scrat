@@ -5,83 +5,59 @@
     padding: 0;
     font-family: 'Fredoka One', cursive;
     font-family: 'Roboto', sans-serif;
-
-
-
 }
 
-/* Header */
-
-header {
-    display: flex;
+/*Titulos generales*/
+h1{
+    padding: 10px;
 }
 
+/*Header*/
 
-.icono img {
-    width: 60px;
-    height: 60px;
-}
-
-header div {
-    width: 50%;
-}
-
-header nav {
-    width: 50%;
-    display: flex;
-    justify-content: end;
-
-
-}
-
-.navegacion {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-around;
-}
-
-.navegacion{
-list-style: none;
-}
-
-header nav a {
-    text-decoration: none;
-}
-
-footer,
-header {
-    background-color: #0076b3;
+header img {
+    width: 50px;
+    height: 50px;
 }
 
 
+/*INICIO*/
+/*Publicidades*/
+
+@media screen and (min-width: 320px) {
+    .carousel-inner img {
+        height: 100px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .carousel-inner img {
+        height: 200px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .carousel-inner img {
+        height: 300px;
+        width: 100%;
+    }
+}
 
 
-/*Para inicio*/
+/*Novedades*/
 
 h1 {
     text-align: center;
-    margin: 20px;
-    width: 100%;
 }
-
-
-.botinesMessi {
-    display: flex;
-}
-
-.botinesMessi img {
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-
 
 .novedades {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20Px;
 }
-
 
 .novedades a:hover {
     opacity: 0.5;
@@ -93,76 +69,112 @@ h1 {
 
 }
 
-
 .novedades article img {
-    height: 300px;
-    width: 300px;
-}
-
-
-.publiSeleccion {
-    display: flex;
-}
-
-.publiSeleccion img {
+    height: 100%;
     width: 100%;
-    margin-bottom: 75px;
 }
+
+/*Marcas*/
 
 .marcas {
+    margin: 2%;
     display: flex;
     justify-content: space-around;
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
-.marcas img {
-    width: 100px;
-    height: 100px;
-}
-
-.sobreNos {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
+@media screen and (min-width: 320px) {
+    .marcas img {
+        width: 50px;
+        height: 50px;
+    }
 
 }
 
-.sobreNos h3,
-p {
-    text-align: center;
+@media screen and (min-width: 768px) {
+    .marcas img {
+        width: 80px;
+        height: 80px;
+    }
 
 }
 
-.sobreNos .redes a {
-    display: flex;
-    padding-left: 15px;
-    padding-right: 30px;
-    width: 30px;
-    height: 30px;
+
+@media screen and (min-width: 1024px) {
+    .marcas img {
+        width: 100px;
+        height: 100px;
+    }
 }
 
-.sobreNos h3,
-p {
-    text-align: center;
+/*Sobre Nosotros*/
+
+@media screen and (min-width: 320px) {
+
+    .sobreNos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nosotros {
+        width: 100%;
+        padding-bottom: 5%;
+    }
+
+    .mapa {
+        width: 100%;
+    }
+
+    .mapa img {
+        width: 100%;
+    }
+
+    .redes img {
+        width: 10%;
+        margin: 2%;
+    }
+
+
 }
 
-.mapa {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+@media screen and (min-width: 1024px) {
+    .sobreNos {
+        display: grid;
+        grid-template-areas: "nosotros nosotros mapa";
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-rows: 1fr;
+        margin: 20px;
+        width: auto;
+    }
 
-.sobreNos .mapa img {
-    width: 400px;
-    padding: 10px;
-}
+    .nosotros {
+        grid-area: nosotros;
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+    }
 
-/*Para indumentaria, Botines y Sale*/
+    .redes {
+        grid-area: nosotros;
+    }
+
+    .redes img {
+        width: 10%;
+        margin: 5px;
+    }
+
+    .mapa {
+        grid-area: mapa;
+    }
+
+    .mapa img {
+        width: auto;
+    }
+}
+/*/INICIO*/
+
+/*INDUMENTARIA, BOTINES Y SALE*/
 
 .galeriaIndumentaria {
     display: flex;
@@ -173,44 +185,19 @@ p {
     padding-bottom: 20px;
 }
 
-.galeriaIndumentaria .remera {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-}
-
-.galeriaIndumentaria img {
-    width: 200px;
-    height: 200px;
-}
-
-
-.galeriaIndumentaria h3,
-p {
-    text-align: center;
-}
-
-.galeriaIndumentaria input {
-    align-items: center;
-}
-
 .galeriaIndumentaria img:hover {
     opacity: 0.5;
 }
 
-.remera {
-    display: flex;
-    align-items: center;
-}
+/*/INDUMENTARIA, BOTINES Y SALE*/
 
-
-/*Para Asistencia*/
-
+/*ASISTENCIA*/
 .cambio {
     display: flex;
     flex-direction: column;
     align-content: flex-start;
 }
+
 
 .cambio h4 {
     font-size: larger;
@@ -252,48 +239,13 @@ p {
     font-size: smaller;
 }
 
-.consulta {
-    display: flex;
-    flex-direction: row;
-    padding-top: 10px;
-    padding-bottom: 30px;
-}
-
-.datos {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 35%;
-
-}
-
-.datos label {
-    height: 30%;
-    font-size: small;
-    margin-left: 5px;
-}
-
-.datos input {
-    width: max-content;
-}
-
-.caja {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-}
-
-.caja label {
-    font-size: small;
-}
-
-.redesSociales .redes {
+.redesSociales .redesA {
     display: flex;
     padding: 15px;
     justify-content: center;
 }
 
-.redesSociales .redes a {
+.redesSociales .redesA a {
     display: flex;
     padding-left: 15px;
     padding-right: 30px;
@@ -309,11 +261,12 @@ p {
     font-size: smaller;
 }
 
-.redesSociales .redes {
+.redesSociales .redesA {
     justify-content: left;
 }
+/*/ASISTENCIA*/
 
-/*Para botin*/
+/*PRODUCTO*/
 .compra {
     display: flex;
 
@@ -380,46 +333,25 @@ p {
     justify-content: center;
 }
 
-.anadirCarro input {
-    margin: 5px;
-}
+/*/PRODUCTO*/
 
-/*Para footer*/
+/*Footer*/
 
 footer {
     display: flex;
-    text-align: center;
-    height: 80px;
-    padding-top: 10px;
     flex-direction: column;
-    height: 100%;
+    text-align: center;
+    padding-top: 10px;
+    background-color: #378dfc;
 }
 
-.volverInicio {
-    display: flex;
-    padding: 15px;
-    justify-content: center;
-
-}
-
-.volverInicio a {
+footer a {
     text-decoration: none;
+    color: blue;
 }
 
-.redes {
-    display: flex;
-    padding: 15px;
-    justify-content: center;
-}
-
-footer .redes a {
-    display: flex;
-    padding-left: 15px;
-    padding-right: 30px;
-    width: 30px;
-    height: 30px;
-}
-
-footer p {
-    padding: 10px;
+footer p{
+    padding-top: 10px;
+    color: black;
+    text-align: center;
 }

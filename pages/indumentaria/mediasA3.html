@@ -7,84 +7,190 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SCRAT</title>
     <link rel="shorcut icon" href="../../assets/logos-y-publicidades/icono.png">
-    <link rel="preconectar" href="https://fonts.googleapis.com">
-    <link rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https: //fonts.googleapis.com/css2? family= Bungee+Inline & family= DM+Sans:wght@400;700 & display=swap"
-        rel="stylesheet">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto&display=swap" rel="stylesheet">
+    <!--CDN fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--CDN WOW-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--CDN boostrap-->
+    <link rel="stylesheet" href="https://bootswatch.com/5/morph/bootstrap.min.css">
+    <!--Css-->
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 
 <body>
 
     <header id="inicio">
-        <div class="icono">
-            <a href="../../index.html"><img src="../../assets/logos-y-publicidades/icono.png" alt="Icono"></a>
-        </div>
-        <nav>
-            <ul class="navegacion">
-                <li><a href="../../index.html">Inicio</a></li>
-                <li><a href="../../pages/indumentaria.html">Indumentaria</a></li>
-                <li><a href="../../pages/botines.html">Botines</a></li>
-                <li><a href="../../pages/sale.html">SALE!</a></li>
-                <li><a href="../../pages/asistencia.html">Asistencia</a></li>
-            </ul>
+        <!--NavBar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../../index.html"><img src="../../assets/logos-y-publicidades/icono.png"
+                        alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                    aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../../index.html">Inicio
+                                <span class="visually-hidden">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../pages/indumentaria.html">Indumentaria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../pages/botines.html">Botines</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../pages/sale.html">Sale!</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../pages/asistencia.html">Asistencia</a>
+                        </li>
+                    </ul>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+            </div>
         </nav>
+        <!--/NavBar-->
 
     </header>
 
     <main>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito de compras
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="card mb-3" style="max-width: 540px;">
+                                            <div class="row g-0">
+                                                <div class="col-md-4">
+                                                    <img src="../../assets/botines/botinN2-2.jpeg" class="img-fluid"
+                                                        alt="botinN2">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">
+                                                            Botines
+                                                            Nike
+                                                            Mercurial
+                                                            Vapor
+                                                            14
+                                                            Academy
+                                                            Tf
+                                                        </h5>
+                                                        <p class="card-text">
+                                                            Cantidad:
+                                                            <button class="btn btn-primary btn-sm"><i
+                                                                    class="fa-solid fa-minus"></i></button>
+                                                            1
+                                                            <button class="btn btn-primary btn-sm"><i
+                                                                    class="fa-regular fa-plus"></i></button><button
+                                                                class="btn btn-danger btn-sm"><i
+                                                                    class="fa-solid fa-trash"></i></button>
+                                                        </p>
+                                                        <p class="card-text">
+                                                            $24.999
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir
+                            comprando</button>
+                        <button type="button" class="btn btn-primary">Finalizar compra</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/Modal-->
+
         <section class="compra">
             <section class="producto">
-                <img src="../../assets/Indumentaria/Medias/mediasA3.png" alt="">
+                <img src="../../assets/Botines/botinA1-2.png" alt="">
             </section>
             <section class="infoProducto">
-                <h3>Medias adidas Milano 16</h3>
+                <h3>Botines adidas Copa Sense.3 Moqueta</h3>
                 <img src="../../assets/logos-y-publicidades/adidas.png" alt="">
                 <b>$21800</b>
                 <p>Seleccione su talla:</p>
                 <section class="talles">
-                    <input type="button" value="S">
-                    <input type="button" value="M">
-                    <input type="button" value="L">
+                    <input type="button" value="38">
+                    <input type="button" value="38.5">
+                    <input type="button" value="39">
+                    <input type="button" value="39.5">
+                    <input type="button" value="40">
+                    <input type="button" value="40.5">
+                    <input type="button" value="41">
+                    <input type="button" value="41.5">
+                    <input type="button" value="42">
+                    <input type="button" value="42.5">
+                    <input type="button" value="43">
+                    <input type="button" value="43.5">
+                    <input type="button" value="44">
                 </section>
                 <section class="anadirCarro">
-                    <input type="submit" value="Añadir al carrito">
+                    <button type="button" class="btn btn-outline-info btn-sm">Añadir al carrito</button>
                 </section>
             </section>
         </section>
 
+        <!--Novedades-->
         <section class="novedades">
-            <h1>También te puede interesar</h1>
+            <h5>TAMBIEN TE PUEDE INTERESAR</h5>
             <article>
-                <a href="../botines/botinN3.html" target="_blank"><img
-                        src="../../assets/Botines/botinN3-1.png"
-                        alt="botinN3"></a>
-                <a href="../indumentaria/camisetaNF.html" target="_blank"><img
-                        src="../../assets/Indumentaria/Camisetas/camisetaNF.png"
-                        alt="camisetaNF"></a>
-                <a href="../indumentaria/mediasU1.html" target="_blank"><img
-                        src="../../assets/Indumentaria/Medias/mediasU1.png" alt="mediasU1"></a>
+                <a href="../../pages/botines/botinN3.html" target="_blank"><img src="../../assets/Botines/botinN3-1.png"
+                        alt="botinesMGris"></a>
+                <a href="../../pages/indumentaria/shortAS2.html" target="_blank"><img
+                        src="../../assets/Indumentaria/shorts/shortAS2.png" alt="camiRiver"></a>
+                <a href="../../pages/indumentaria/mediasA2.html" target="_blank"><img
+                        src="../../assets/Indumentaria/Medias/mediasA2.png" alt="botinesMGris"></a>
             </article>
         </section>
+        <!--/Novedades-->
 
     </main>
 
     <footer>
         <div class="volverInicio">
-            <a href="./mediasA3.html#inicio">Volver al inicio</a>
-        </div>
-        <div class="redes">
-            <a href="https://www.instagram.com/" target="_blank"><img
-                    src="../../assets/logos-y-publicidades/instagram.png" alt="instagramLogo"></a>
-            <a href="https://www.facebook.com/" target="_blank"><img
-                    src="../../assets/logos-y-publicidades/facebook.png" alt="facebookLogo"></a>
-            <a href=" https://twitter.com/home?lang=es" target="_blank"><img
-                    src="../../assets/logos-y-publicidades/twitter.png" alt="twitterLogo"></a>
-            <a href="https://www.youtube.com/" target="_blank"><img
-                    src="../../assets/logos-y-publicidades/youtube-logo.png" alt="youtubeLogo"></a>
+                <a href="#inicio">Volver al inicio</a>
         </div>
         <p>© 2022 SCRAT | Todos los derechos reservados</p>
-    </footer>
+        </div>
+</footer>
+
+
+<!--CDN boostrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

@@ -7,143 +7,148 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>SCRAT</title>
         <link rel="shorcut icon" href="../assets/logos-y-publicidades/icono.png">
-        <link rel="preconectar" href="https://fonts.googleapis.com">
-        <link rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https: //fonts.googleapis.com/css2? family= Bungee+Inline & family= DM+Sans:wght@400;700 & display=swap"
-                rel="stylesheet">
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto&display=swap" rel="stylesheet">
+        <!--CDN fontawesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+                integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+                crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--CDN WOW-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <!--CDN boostrap-->
+        <link rel="stylesheet" href="https://bootswatch.com/5/morph/bootstrap.min.css">
+        <!--Css-->
         <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
         <header id="inicio">
-                <div class="icono">
-                        <a href="../index.html"><img src="../assets/logos-y-publicidades/icono.png" alt="Icono"></a>
-                </div>
-                <nav>
-                        <ul class="navegacion">
-                                <li><a href="../index.html">Inicio</a></li>
-                                <li><a href="../pages/indumentaria.html">Indumentaria</a></li>
-                                <li><a href="../pages/botines.html">Botines</a></li>
-                                <li><a href="../pages/sale.html">SALE!</a></li>
-                                <li><a href="../pages/asistencia.html">Asistencia</a></li>
-                        </ul>
+                <!--NavBar-->
+                <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                        <div class="container-fluid">
+                                <a class="navbar-brand" href="../index.html"><img
+                                                src="../assets/logos-y-publicidades/icono.png" alt="logo"></a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarColor01" aria-controls="navbarColor01"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarColor01">
+                                        <ul class="navbar-nav me-auto">
+                                                <li class="nav-item">
+                                                        <a class="nav-link active" href="../index.html">Inicio
+                                                                <span class="visually-hidden">(current)</span>
+                                                        </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                        <a class="nav-link" href="./indumentaria.html">Indumentaria</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                        <a class="nav-link" href="./botines.html">Botines</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                        <a class="nav-link" href="./sale.html">Sale!</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                        <a class="nav-link" href="./asistencia.html">Asistencia</a>
+                                                </li>
+                                        </ul>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+                                </div>
+                        </div>
                 </nav>
+                <!--/NavBar-->
 
         </header>
 
-    <main>
+        <main>
+
+                <!-- Modal -->
+
         <h1>NIKE</h1>
         <section class="galeriaIndumentaria">
-            <article class="remera">
-                <a href="./indumentaria/camisetaJP.html"><img
-                        src="../assets/Indumentaria/Camisetas/camisetaJP.jpg"
-                        alt=""></a>
-                <h3>Camiseta Jordan PSG Alternativa Stadium 21</h3>
-                <p>$18000</p>
-                <a href="./indumentaria/camisetaJP.html"><input type="button" value="Comprar"></a>
-            </article>
+                
+                <div class="card text-center" style="width: 14rem;">
+                        <a href="./indumentaria/camisetaAS2.html"><img
+                                        src="../assets/Indumentaria/Camisetas/camisetaAS2.jpg"
+                                        class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                                <h5 class="card-title">Camiseta Adidas Messi Selección Argentina
+                                </h5>
+                                <p class="card-text">$18000</p>
+                                <a href="./indumentaria/camisetaAS2.html" class="btn btn-primary">Comprar</a>
+                        </div>
+                </div>
 
-            <article class="remera">
-                <a href="./indumentaria/camisetaNA.html"><img
-                        src="../assets/Indumentaria/Camisetas/camisetaNA.jpg"
-                        alt=""></a>
-                <h3>Camiseta Nike Atltetico de Madrid Alternativa 21</h3>
-                <p>$18000</p>
-                <a href="./indumentaria/camisetaNA.html"><input type="button" value="Comprar"></a>
-            </article>
+                <div class="card text-center" style="width: 14rem;">
+                        <a href="./indumentaria/camisetaAS1.html"><img
+                                        src="../assets/Indumentaria/Camisetas/camisetaAS1.jpg"
+                                        class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                                <h5 class="card-title">Camiseta Adidas Selección Argentina</h5>
+                                <p class="card-text">$18000</p>
+                                <a href="./indumentaria/camisetaAS1.html" class="btn btn-primary">Comprar</a>
+                        </div>
+                </div>
 
-            <article class="remera">
-                <a href="./indumentaria/camisetaNB.html"><img
-                        src="../assets/Indumentaria/Camisetas/camisetaNB.jpg" alt=""></a>
-                <h3>Camiseta Nike Barcelona Titular 21</h3>
-                <p>$18000</p>
-                <a href="./indumentaria/camisetaNB.html"><input type="button" value="Comprar"></a>
-            </article>
+                <div class="card text-center" style="width: 14rem;">
+                        <a href="./indumentaria/camisetaAB.html"><img
+                                        src="../assets/Indumentaria/Camisetas/camisetaAB.jpeg"
+                                        class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                                <h5 class="card-title">Camiseta adidas Boca Juniors Local 2021</h5>
+                                <p class="card-text">$18000</p>
+                                <a href="./indumentaria/camisetaAB.html" class="btn btn-primary">Comprar</a>
+                        </div>
+                </div>
 
-            <article class="remera">
-                <a href="./indumentaria/camisetaNF.html"><img
-                        src="../assets/Indumentaria/Camisetas/camisetaNF.jpeg" alt=""></a>
-                <h3>Camiseta Nike Francia Titular Stadium 22</h3>
-                <p>$18000</p>
-                <a href="./indumentaria/camisetaNF.html"><input type="button" value="Comprar"></a>
-            </article>
 
-            <article class="remera">
-                <a href="./indumentaria/camisetaNBr.html"><img
-                        src="../assets/Indumentaria/Camisetas/camisetaNBr.jpeg" alt=""></a>
-                <h3>Camiseta Nike Brasil Suplente Stadium 22</h3>
-                <p>$18000</p>
-                <a href="./indumentaria/camisetaNBr.html"><input type="button" value="Comprar"></a>
-            </article>
+                <div class="card text-center" style="width: 14rem;">
+                        <a href="./indumentaria/camisetaAS3.html"><img
+                                        src="../assets/Indumentaria/Camisetas/camisetaAS3.jpg"
+                                        class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                                <h5 class="card-title">Camiseta Adidas Titular Selección Argentina 2022</h5>
+                                <p class="card-text">$18000</p>
+                                <a href="./indumentaria/camisetaAS3.html" class="btn btn-primary">Comprar</a>
+                        </div>
+                </div>
 
-            <article class="remera">
-                <a href="./indumentaria/shortNL.html"><img
-                        src="../assets/Indumentaria/Shorts/shortNL.jpeg" alt=""></a>
-                <h3>Short Nike Liverpool Fc 2022 Stadium Home</h3>
-                <p>$18000</p>
-                <a href="./indumentaria/shortNL.html"><input type="button" value="Comprar"></a>
-            </article>
-
-            <article class="remera">
-                <a href="./indumentaria/mediasN1.html"><img src="../assets/Indumentaria/Medias/mediasN1.jpeg"
-                        alt=""></a>
-                <h3>Medias Nike Classic</h3>
-                <p>$18000</p>
-                <a href="./indumentaria/mediasN1.html"><input type="button" value="Comprar"></a>
-            </article>
-
-            <article class="remera">
-                <a href="./botines/botinN1.html"><img
-                        src="../assets/Botines/botinN1-1.png" alt=""></a>
-                <h3>Botines Nike Legend 9 Academy FgMg</h3>
-                <p>$18000</p>
-                <a href="./botines/botinN1.html"><input type="button" value="Comprar"></a>
-            </article>
-
-            <article class="remera">
-                <a href="./botines/botinN2.html"><img
-                        src="../assets/Botines/botinN2-1.png" alt=""></a>
-                <h3>Botines Nike Mercurial Vapor 14 Academy Tf</h3>
-                <p>$18000</p>
-                <a href="./botines/botinN2.html"><input type="button" value="Comprar"></a>
-            </article>
-
-            <article class="remera">
-                <a href="./botines/botinN3.html"><img
-                        src="../assets/Botines/botinN3-1.png" alt=""></a>
-                <h3>Botines Nike Mercurial Vapor 14 Elite Fg2</h3>
-                <p>$18000</p>
-                <a href="./botines/botinN3.html"><input type="button" value="Comprar"></a>
-            </article>
-
-            <article class="remera">
-                <a href="./botines/botinN4.html"><img
-                        src="../assets/Botines/botinN4-1.png" alt=""></a>
-                <h3>Botines Nike Phantom Gt2 Academy Tf</h3>
-                <p>$18000</p>
-                <a href="./botines/botinN4.html"><input type="button" value="Comprar"></a>
-            </article>
+                <div class="card text-center" style="width: 14rem;">
+                        <a href="./indumentaria/camisetaGN.html"><img
+                                        src="../assets/Indumentaria/Camisetas/camisetaGN.jpeg"
+                                        class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                                <h5 class="card-title">Camiseta Givova Newell's Old Boys Alternativa</h5>
+                                <p class="card-text">$18000</p>
+                                <a href="./indumentaria/camisetaGN.html" class="btn btn-primary">Comprar</a>
+                        </div>
+                </div>
         </section>
 
     </main>
 
-    <footer>
-        <div class="volverInicio">
-            <a href="./nike.html#inicio">Volver al inicio</a>
-        </div>
-        <div class="redes">
-            <a href="https://www.instagram.com/" target="_blank"><img
-                            src="../assets/logos-y-publicidades/instagram.png" alt="instagramLogo"></a>
-            <a href="https://www.facebook.com/" target="_blank"><img
-                            src="../assets/logos-y-publicidades/facebook.png" alt="facebookLogo"></a>
-            <a href=" https://twitter.com/home?lang=es" target="_blank"><img
-                            src="../assets/logos-y-publicidades/twitter.png" alt="twitterLogo"></a>
-            <a href="https://www.youtube.com/" target="_blank"><img
-                            src="../assets/logos-y-publicidades/youtube-logo.png" alt="youtubeLogo"></a>
-    </div>
-        <p>© 2022 SCRAT | Todos los derechos reservados</p>
-    </footer>
+        <footer>
+                <div class="volverInicio">
+                        <a href="#inicio">Volver al inicio</a>
+                </div>
+                <p>© 2022 SCRAT | Todos los derechos reservados</p>
+                </div>
+        </footer>
+
+        <!--CDN boostrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+                crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
