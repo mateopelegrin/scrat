@@ -1,0 +1,33 @@
+//variables
+@import "../scss/utilites/variables";
+
+//mixins
+@import "../scss/utilites/mixins";
+
+//componentes
+@import "../scss/components/botones";
+
+//reset css
+@import "../scss/base/reset";
+
+//tipografias
+@import "../scss/base/tipografia";
+
+//header
+@import "../scss/layout/header";
+
+//views
+//inicio
+@import "../scss/views/inicio";
+//galeria
+@import "../scss/views/galeria";
+//asistencia
+@import "../scss/views/asistencia";
+//producto
+@import "../scss/views/producto";
+
+//grid inicio
+@import "../scss/layout/gridinicio";
+
+//footer
+@import "../scss/layout/footer";

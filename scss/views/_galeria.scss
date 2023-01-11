@@ -1,0 +1,13 @@
+/*GALERIA INDUMENTARIA BOTINES Y SALE*/
+.galeriaIndumentaria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: $veinte;
+    padding-bottom: $veinte;
+    img:hover {
+        opacity: 0.5;
+    }   
+}
+

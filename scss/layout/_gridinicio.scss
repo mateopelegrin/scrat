@@ -1,0 +1,30 @@
+@media screen and (min-width: $desktop) {
+    .sobreNos {
+        display: grid;
+        grid-template-areas: "nosotros nosotros mapa";
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-rows: 1fr;
+        margin: $veinte;
+        width: auto;
+
+        .nosotros {
+            grid-area: nosotros;
+            @include flex-column;
+            margin-right: $diez;
+
+            .redes {
+                grid-area: nosotros;
+
+                img {
+                    width: $cuarenta;
+                    margin: $tres;
+                }
+
+            }
+        }
+
+        .mapa {
+            grid-area: mapa;
+        }
+    }
+}

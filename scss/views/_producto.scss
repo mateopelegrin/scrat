@@ -1,0 +1,153 @@
+/*PRODUCTO*/
+@media screen and (min-width: $mobile) {
+    .compra {
+        @include flex-column;
+        margin: $cinco;
+
+        .producto {
+            width: $cienporcien;
+
+            img {
+                @include wyh($cienporcien, $cienporcien);
+            }
+        }
+    }
+
+    .infoProducto {
+        @include flex-column;
+        width: $cienporcien;
+
+        h3 {
+            @include h3producto;
+            font-size: medium;
+        }
+
+        img {
+            width: $cincuenta;
+        }
+
+        b {
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        p {
+            @extend b;
+            margin-top: 10px;
+        }
+
+        .talles {
+            @include flex-wrap;
+            justify-content: space-evenly;
+
+            input {
+                @include bordetalles;
+                margin: $tres;
+                width: 31%;
+            }
+
+            input:focus {
+                color: $rojo;
+            }
+        }
+    }
+
+    .novedadesP {
+        @include novedadesproducto;
+        margin-top: $veinte;
+
+        h5 {
+            font-size: small;
+            margin-top: $veinte;
+        }
+
+        a:hover {
+            opacity: 0.5;
+        }
+
+        article {
+            @include flex-spacearound;
+        }
+
+        img {
+            @include wyh($cienporcien, $cienporcien);
+        }
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .infoProducto h3 {
+        @include h3producto;
+        font-size: larger;
+    }
+    .novedadesP {
+        h5{
+            font-size: medium;
+        }
+
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .compra {
+        display: flex;
+        flex-direction: row;
+
+        .producto {
+            width: $cincuentaporcien;
+
+            img {
+                @include wyh($cienporcien, $cienporcien);
+
+            }
+        }
+
+        .infoProducto {
+            @include flex-column;
+            width: $cincuentaporcien;
+
+            h3{
+                font-size: larger;
+                text-align: left;
+                padding-bottom: $diez;
+            }
+
+            p {
+                text-align: left;
+            }
+
+            img {
+                width: $cincuenta;
+            }
+
+            .talles {
+                @include flex-wrap;
+                width: ($cien*3);
+                justify-content: left;
+
+                input {
+                    @include bordetalles;
+                }
+
+                input:focus {
+                    color: $rojo;
+                }
+            }
+
+            .anadirCarro {
+                display: flex;
+                width: ($cien*3);
+                justify-content: center;
+            }
+        }
+    }
+
+    .novedadesP {
+        @include novedadesproducto;
+        margin-top: $veinte;
+        h5{
+            font-size: large;
+        }
+
+    }
+}

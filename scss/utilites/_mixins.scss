@@ -1,0 +1,70 @@
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-spacearound {
+    display: flex;
+    justify-content: space-around;
+}
+
+@mixin flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin wyh ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin paddingtyb ($top, $bottom) {
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+
+@mixin paddinglyr ($left, $right) {
+    padding-left: $left;
+    padding-right: $right;
+}
+
+@mixin margintyb ($top, $bottom) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+@mixin h4asistencia {
+    .cambio p {
+        font-size: larger;
+        text-align: center;
+        @include margintyb ($veinte, $treinta);
+    }
+}
+
+@mixin h5asistencia {
+    font-size: medium;
+    margin-left: $cinco;
+}
+
+@mixin pasistencia {
+    text-align: left;
+    @include margintyb ($diez, $diez);
+    margin-left: $cinco;
+    font-size: smaller;
+}
+
+@mixin h3producto {
+    text-align: left;
+    @include margintyb ($tres, $tres);
+}
+
+@mixin bordetalles {
+    border-radius: $diez;
+    border-color: $negro;
+}
+
+@mixin novedadesproducto {
+    @include flex-column;
+    justify-content: center;
+    text-align: center;
+}

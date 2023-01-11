@@ -1,0 +1,83 @@
+/*INICIO*/
+/*publicidades*/
+
+
+@media screen and (min-width: $mobile) {
+    .carousel-inner img {
+        height: $cien;
+        width: $cienporcien;
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .carousel-inner img {
+        height: ($cien*3);
+        width: $cienporcien;
+    }
+}
+
+/*novedades*/
+.novedades {
+    @include flex-column;
+    justify-content: center;
+    text-align: center;
+    padding-top: $veinte;
+
+    a:hover {
+        opacity: 0.5;
+    }
+
+    article {
+        @include flex-spacearound;
+
+        img {
+            @include wyh($cienporcien, $cienporcien);
+        }
+    }
+}
+
+/*marcas*/
+.marcas {
+    @include flex-spacearound;
+    @include paddingtyb($cuarenta, $cuarenta);
+}
+
+@media screen and (min-width: $mobile) {
+    .marcas img {
+        @include wyh($cincuenta, $cincuenta);
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .marcas img {
+        @include wyh(($cincuenta+$treinta), ($cincuenta+$treinta));
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .marcas img {
+        @include wyh($cien, $cien);
+    }
+}
+
+/*sobre nosotros*/
+@media screen and (min-width: $mobile) {
+.sobreNos {
+    @include flex-column;
+
+    .nosotros, .mapa {
+        width: $cienporcien;
+        margin: $cinco;
+
+        h3 {
+            font-size: medium;
+        }
+
+        .redes img {
+            width: $diezporcien;
+            margin: $tres;
+        }
+    }
+}
+}
+

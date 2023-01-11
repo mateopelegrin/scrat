@@ -1,0 +1,55 @@
+/*ASISTENCIA*/
+.cambio,
+.contactate,
+.redesSociales {
+    margin: $diez;
+}
+
+.cambio {
+    @include flex-column;
+    align-content: flex-start;
+
+    h4 {
+        @include h4asistencia;
+    }
+
+    h5 {
+        @include h5asistencia;
+    }
+
+    p {
+        @include pasistencia;
+    }
+}
+
+.contactate {
+    h4 {
+        @include h4asistencia;
+    }
+
+    h5 {
+        @include h5asistencia;
+    }
+
+    p {
+        @include pasistencia;
+    }
+}
+
+.redesSociales {
+    .redesA {
+        display: flex;
+        justify-content: left;
+        padding: ($diez+$cinco);
+
+        a {
+            display: flex;
+            @include paddinglyr (($diez+$cinco), $treinta);
+            @include wyh ($treinta, $treinta);
+        }
+
+        p {
+            @include pasistencia;
+        }
+    }
+}

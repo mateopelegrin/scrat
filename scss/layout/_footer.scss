@@ -1,0 +1,18 @@
+/*footer*/
+footer {
+    @include flex-column;
+    text-align: center;
+    padding-top: $diez;
+    background-color: $celeste;
+
+    a {
+        text-decoration: none;
+        color: $azul;
+    }
+
+    p {
+        padding-top: $diez;
+        color: $negro;
+        text-align: center;
+    }
+}
