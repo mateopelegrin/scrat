@@ -25,18 +25,23 @@
         justify-content: center;
         text-align: center;
         margin-bottom: $cincuenta;
-        h5{
-        @include margintyb($cuarenta, $veinte);
-        font-size: small;
+
+        h5 {
+            @include margintyb($cuarenta, $veinte);
+            font-size: small;
+            background-color: $celeste;
+            padding: $cinco;
+            color: #fff;
         }
+
         a:hover {
             opacity: 0.5;
         }
-    
+
         article {
             @include flex-spacearound;
             height: ($treinta+$cincuenta);
-    
+
             img {
                 @include wyh($cienporcien, $cienporcien);
             }
@@ -46,91 +51,105 @@
 
 @media screen and (min-width: $tablet) {
     .novedades {
-    @include flex-column;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: $cincuenta;
-    h5{
-    @include margintyb($cuarenta, $veinte);
-    font-size: medium;
-    background-color: $celeste;
-    padding: $cinco;
-    color: #fff;
-    }
-    a:hover {
-        opacity: 0.5;
-    }
+        @include flex-column;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: $cincuenta;
 
-    article {
-        @include flex-spacearound;
-        height: ($cien+$cincuenta);
+        h5 {
+            @include margintyb($cuarenta, $veinte);
+            font-size: medium;
+            background-color: $celeste;
+            padding: $cinco;
+            color: #fff;
+        }
 
-        img {
-            @include wyh($cienporcien, $cienporcien);
+        a:hover {
+            opacity: 0.5;
+        }
+
+        article {
+            @include flex-spacearound;
+            height: ($cien+$cincuenta);
+
+            img {
+                @include wyh($cienporcien, $cienporcien);
+            }
         }
     }
-}
 }
 
 /*secciones*/
 @media screen and (min-width: $mobile) {
-    .secciones{
-    @include flex-wrap;
-    @include wyh($cienporcien,$cien);
-    background-color: $negro;
-    .camisetas{
-        background-image: url("../../assets/logos-y-publicidades/camiseta-messi.jpg");
-    @include bg-inicio-mobile;
-    width: $cincuentaporcien;
-        }
-        .camisetas:hover{
-            opacity: 0.7;
-            a{
-                font-size: 12px;
-            }
-        }
-        .botines{
-            background-image: url("../../assets/logos-y-publicidades/botines.jpg");
+    .secciones {
+        @include flex-wrap;
+        @include wyh($cienporcien, $cien);
+        background-color: $negro;
+
+        .camisetas {
+            background-image: url("../assets/logos-y-publicidades/camiseta-publi.png");
             @include bg-inicio-mobile;
             width: $cincuentaporcien;
         }
-        .botines:hover{
+
+        .camisetas:hover {
             opacity: 0.7;
-            a{
+
+            a {
+                font-size: 12px;
+            }
+        }
+
+        .botines {
+            background-image: url("../assets/logos-y-publicidades/botines-publi.png");
+            @include bg-inicio-mobile;
+            width: $cincuentaporcien;
+        }
+
+        .botines:hover {
+            opacity: 0.7;
+
+            a {
                 font-size: 12px;
             }
         }
     }
-    }
+}
 
 @media screen and (min-width: $tablet) {
-.secciones{
-@include flex-wrap;
-@include wyh($cienporcien,250px);
-background-color: $negro;
-.camisetas{
-    background-image: url("../../assets/logos-y-publicidades/camiseta-messi.jpg");
-@include bg-inicio;
-width: $cincuentaporcien;
-    }
-    .camisetas:hover{
-        opacity: 0.7;
-        a{
-            font-size: 34px;
+    .secciones {
+        @include flex-wrap;
+        @include wyh($cienporcien, 250px);
+        background-color: $negro;
+
+        .camisetas {
+            background-image: url(../assets/logos-y-publicidades/camiseta-publi.png);
+            @include bg-inicio;
+            width: $cincuentaporcien;
+        }
+
+        .camisetas:hover {
+            opacity: 0.7;
+
+            a {
+                font-size: 34px;
+            }
+        }
+
+        .botines {
+            background-image: url(../assets/logos-y-publicidades/botines-publi.png);
+            @include bg-inicio;
+            width: $cincuentaporcien;
+        }
+
+        .botines:hover {
+            opacity: 0.7;
+
+            a {
+                font-size: 34px;
+            }
         }
     }
-    .botines{
-        background-image: url("../../assets/logos-y-publicidades/botines.jpg");
-        @include bg-inicio;
-        width: $cincuentaporcien;
-    }
-    .botines:hover{
-        opacity: 0.7;
-        a{
-            font-size: 34px;
-        }
-    }
-}
 }
 
 
@@ -162,7 +181,8 @@ width: $cincuentaporcien;
 .sobreNos {
     @include flex-column;
 
-    .nosotros, .mapa {
+    .nosotros,
+    .mapa {
         width: $cienporcien;
         margin: $cinco;
 
@@ -176,4 +196,3 @@ width: $cincuentaporcien;
         }
     }
 }
-

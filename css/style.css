@@ -53,7 +53,10 @@ header {
     .novedades h5 {
       margin-top: 40px;
       margin-bottom: 20px;
-      font-size: small; }
+      font-size: small;
+      background-color: #378dfc;
+      padding: 5px;
+      color: #fff; }
     .novedades a:hover {
       opacity: 0.5; }
     .novedades article {
@@ -97,7 +100,7 @@ header {
     height: 100px;
     background-color: black; }
     .secciones .camisetas {
-      background-image: url("../../assets/logos-y-publicidades/camiseta-messi.jpg");
+      background-image: url("../assets/logos-y-publicidades/camiseta-publi.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -114,7 +117,7 @@ header {
       .secciones .camisetas:hover a {
         font-size: 12px; }
     .secciones .botines {
-      background-image: url("../../assets/logos-y-publicidades/botines.jpg");
+      background-image: url("../assets/logos-y-publicidades/botines-publi.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -139,7 +142,7 @@ header {
     height: 250px;
     background-color: black; }
     .secciones .camisetas {
-      background-image: url("../../assets/logos-y-publicidades/camiseta-messi.jpg");
+      background-image: url(../assets/logos-y-publicidades/camiseta-publi.png);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -156,7 +159,7 @@ header {
       .secciones .camisetas:hover a {
         font-size: 34px; }
     .secciones .botines {
-      background-image: url("../../assets/logos-y-publicidades/botines.jpg");
+      background-image: url(../assets/logos-y-publicidades/botines-publi.png);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -199,12 +202,15 @@ header {
 .sobreNos {
   display: flex;
   flex-direction: column; }
-  .sobreNos .nosotros, .sobreNos .mapa {
+  .sobreNos .nosotros,
+  .sobreNos .mapa {
     width: 100%;
     margin: 5px; }
-    .sobreNos .nosotros h3, .sobreNos .mapa h3 {
+    .sobreNos .nosotros h3,
+    .sobreNos .mapa h3 {
       font-size: medium; }
-    .sobreNos .nosotros .redes img, .sobreNos .mapa .redes img {
+    .sobreNos .nosotros .redes img,
+    .sobreNos .mapa .redes img {
       width: 40px;
       margin: 3px; }
 
