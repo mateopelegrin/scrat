@@ -2,7 +2,7 @@
 @media screen and (min-width: $mobile) {
     .compra {
         @include flex-column;
-        margin: $cinco;
+        padding-top: ($cincuenta+$veinte);
 
         .producto {
             width: $cienporcien;
@@ -67,6 +67,8 @@
 
         article {
             @include flex-spacearound;
+            height: 150px;
+            margin-top: 20px;
         }
 
         img {
@@ -80,8 +82,9 @@
         @include h3producto;
         font-size: larger;
     }
+
     .novedadesP {
-        h5{
+        h5 {
             font-size: medium;
         }
 
@@ -92,6 +95,8 @@
     .compra {
         display: flex;
         flex-direction: row;
+        padding-top: ($cincuenta+$treinta);
+
 
         .producto {
             width: $cincuentaporcien;
@@ -105,8 +110,9 @@
         .infoProducto {
             @include flex-column;
             width: $cincuentaporcien;
+            padding-top: $cuarenta;
 
-            h3{
+            h3 {
                 font-size: larger;
                 text-align: left;
                 padding-bottom: $diez;
@@ -139,14 +145,23 @@
                 width: ($cien*3);
                 justify-content: center;
             }
+
+            .ptachada {
+                text-decoration: line-through;
+                color: red;
+            }
         }
     }
 
     .novedadesP {
         @include novedadesproducto;
         margin-top: $veinte;
-        h5{
+
+        h5 {
             font-size: large;
+            background-color: $celeste;
+            padding: $cinco;
+            color: #fff;
         }
 
     }

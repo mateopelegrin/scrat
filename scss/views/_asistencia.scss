@@ -8,6 +8,7 @@
 .cambio {
     @include flex-column;
     align-content: flex-start;
+    padding-top: 70px;
 
     h4 {
         @include h4asistencia;

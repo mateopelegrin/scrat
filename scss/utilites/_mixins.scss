@@ -28,6 +28,11 @@
     padding-right: $right;
 }
 
+@mixin marginlyr ($left, $right) {
+    margin-left: $left;
+    margin-right: $right;
+}
+
 @mixin margintyb ($top, $bottom) {
     margin-top: $top;
     margin-bottom: $bottom;
@@ -67,4 +72,32 @@
     @include flex-column;
     justify-content: center;
     text-align: center;
+}
+
+@mixin bg-inicio{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+a{
+        text-decoration: none;
+        font-size: 30px;
+        color: white;
+}
+}
+
+@mixin bg-inicio-mobile{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+a{
+        text-decoration: none;
+        font-size: 10px;
+        color: white;
+}
 }

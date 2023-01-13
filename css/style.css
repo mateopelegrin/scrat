@@ -19,17 +19,23 @@ h1 {
   padding: 10px;
   text-align: center; }
 
-/*icono header*/
-header img {
-  width: 50px;
-  height: 50px; }
+/*header*/
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1030; }
+  header img {
+    width: 50px;
+    height: 50px; }
 
 /*INICIO*/
 /*publicidades*/
 @media screen and (min-width: 320px) {
   .carousel-inner img {
-    height: 100px;
-    width: 100%; } }
+    height: 200px;
+    width: 100%;
+    padding-top: 70px; } }
 
 @media screen and (min-width: 768px) {
   .carousel-inner img {
@@ -37,20 +43,135 @@ header img {
     width: 100%; } }
 
 /*novedades*/
-.novedades {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  padding-top: 20px; }
-  .novedades a:hover {
-    opacity: 0.5; }
-  .novedades article {
+@media screen and (min-width: 320px) {
+  .novedades {
     display: flex;
-    justify-content: space-around; }
-    .novedades article img {
-      width: 100%;
-      height: 100%; }
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px; }
+    .novedades h5 {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: small; }
+    .novedades a:hover {
+      opacity: 0.5; }
+    .novedades article {
+      display: flex;
+      justify-content: space-around;
+      height: 80px; }
+      .novedades article img {
+        width: 100%;
+        height: 100%; } }
+
+@media screen and (min-width: 768px) {
+  .novedades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px; }
+    .novedades h5 {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: medium;
+      background-color: #378dfc;
+      padding: 5px;
+      color: #fff; }
+    .novedades a:hover {
+      opacity: 0.5; }
+    .novedades article {
+      display: flex;
+      justify-content: space-around;
+      height: 150px; }
+      .novedades article img {
+        width: 100%;
+        height: 100%; } }
+
+/*secciones*/
+@media screen and (min-width: 320px) {
+  .secciones {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100px;
+    background-color: black; }
+    .secciones .camisetas {
+      background-image: url("../../assets/logos-y-publicidades/camiseta-messi.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%; }
+      .secciones .camisetas a {
+        text-decoration: none;
+        font-size: 10px;
+        color: white; }
+    .secciones .camisetas:hover {
+      opacity: 0.7; }
+      .secciones .camisetas:hover a {
+        font-size: 12px; }
+    .secciones .botines {
+      background-image: url("../../assets/logos-y-publicidades/botines.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%; }
+      .secciones .botines a {
+        text-decoration: none;
+        font-size: 10px;
+        color: white; }
+    .secciones .botines:hover {
+      opacity: 0.7; }
+      .secciones .botines:hover a {
+        font-size: 12px; } }
+
+@media screen and (min-width: 768px) {
+  .secciones {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 250px;
+    background-color: black; }
+    .secciones .camisetas {
+      background-image: url("../../assets/logos-y-publicidades/camiseta-messi.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%; }
+      .secciones .camisetas a {
+        text-decoration: none;
+        font-size: 30px;
+        color: white; }
+    .secciones .camisetas:hover {
+      opacity: 0.7; }
+      .secciones .camisetas:hover a {
+        font-size: 34px; }
+    .secciones .botines {
+      background-image: url("../../assets/logos-y-publicidades/botines.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%; }
+      .secciones .botines a {
+        text-decoration: none;
+        font-size: 30px;
+        color: white; }
+    .secciones .botines:hover {
+      opacity: 0.7; }
+      .secciones .botines:hover a {
+        font-size: 34px; } }
 
 /*marcas*/
 .marcas {
@@ -75,29 +196,36 @@ header img {
     height: 100px; } }
 
 /*sobre nosotros*/
-@media screen and (min-width: 320px) {
-  .sobreNos {
-    display: flex;
-    flex-direction: column; }
-    .sobreNos .nosotros, .sobreNos .mapa {
-      width: 100%;
-      margin: 5px; }
-      .sobreNos .nosotros h3, .sobreNos .mapa h3 {
-        font-size: medium; }
-      .sobreNos .nosotros .redes img, .sobreNos .mapa .redes img {
-        width: 10%;
-        margin: 3px; } }
+.sobreNos {
+  display: flex;
+  flex-direction: column; }
+  .sobreNos .nosotros, .sobreNos .mapa {
+    width: 100%;
+    margin: 5px; }
+    .sobreNos .nosotros h3, .sobreNos .mapa h3 {
+      font-size: medium; }
+    .sobreNos .nosotros .redes img, .sobreNos .mapa .redes img {
+      width: 40px;
+      margin: 3px; }
 
 /*GALERIA INDUMENTARIA BOTINES Y SALE*/
+.titulo {
+  padding-top: 70px; }
+
 .galeriaIndumentaria {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   gap: 20px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px; }
   .galeriaIndumentaria img:hover {
-    opacity: 0.5; }
+    scale: 1.2; }
+  .galeriaIndumentaria .ptachada {
+    text-decoration: line-through;
+    color: red; }
 
 /*ASISTENCIA*/
 .cambio,
@@ -108,7 +236,8 @@ header img {
 .cambio {
   display: flex;
   flex-direction: column;
-  align-content: flex-start; }
+  align-content: flex-start;
+  padding-top: 70px; }
   .cambio h4 .cambio p {
     font-size: larger;
     text-align: center;
@@ -163,7 +292,7 @@ header img {
   .compra {
     display: flex;
     flex-direction: column;
-    margin: 5px; }
+    padding-top: 70px; }
     .compra .producto {
       width: 100%; }
       .compra .producto img {
@@ -209,7 +338,9 @@ header img {
       opacity: 0.5; }
     .novedadesP article {
       display: flex;
-      justify-content: space-around; }
+      justify-content: space-around;
+      height: 150px;
+      margin-top: 20px; }
     .novedadesP img {
       width: 100%;
       height: 100%; } }
@@ -226,7 +357,8 @@ header img {
 @media screen and (min-width: 1024px) {
   .compra {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    padding-top: 80px; }
     .compra .producto {
       width: 50%; }
       .compra .producto img {
@@ -235,7 +367,8 @@ header img {
     .compra .infoProducto {
       display: flex;
       flex-direction: column;
-      width: 50%; }
+      width: 50%;
+      padding-top: 40px; }
       .compra .infoProducto h3 {
         font-size: larger;
         text-align: left;
@@ -258,6 +391,9 @@ header img {
         display: flex;
         width: 300px;
         justify-content: center; }
+      .compra .infoProducto .ptachada {
+        text-decoration: line-through;
+        color: red; }
   .novedadesP {
     display: flex;
     flex-direction: column;
@@ -265,7 +401,10 @@ header img {
     text-align: center;
     margin-top: 20px; }
     .novedadesP h5 {
-      font-size: large; } }
+      font-size: large;
+      background-color: #378dfc;
+      padding: 5px;
+      color: #fff; } }
 
 @media screen and (min-width: 1024px) {
   .sobreNos {

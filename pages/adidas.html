@@ -25,7 +25,7 @@
 
 <body>
 
-        <header id="inicio">
+        <header>
                 <!--NavBar-->
                 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
                         <div class="container-fluid">
@@ -39,7 +39,7 @@
                                 <div class="collapse navbar-collapse" id="navbarColor01">
                                         <ul class="navbar-nav me-auto">
                                                 <li class="nav-item">
-                                                        <a class="nav-link active" href="../index.html">Inicio
+                                                        <a class="nav-link" href="../index.html">Inicio
                                                                 <span class="visually-hidden">(current)</span>
                                                         </a>
                                                 </li>
@@ -68,72 +68,333 @@
 
         </header>
 
-        <main>
+        <main id="inicio">
 
                 <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                                <div class="modal-content">
+                                        <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito de compras
+                                                </h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                                <table class="table">
+                                                        <tbody>
+                                                                <tr>
+                                                                        <td>
+                                                                                <div class="card mb-3"
+                                                                                        style="max-width: 540px;">
+                                                                                        <div class="row g-0">
+                                                                                                <div class="col-md-4">
+                                                                                                        <img src="../assets/botines/botinN2-2.png"
+                                                                                                                class="img-fluid"
+                                                                                                                alt="botinN2">
+                                                                                                </div>
+                                                                                                <div class="col-md-8">
+                                                                                                        <div
+                                                                                                                class="card-body">
+                                                                                                                <h5
+                                                                                                                        class="card-title">
+                                                                                                                        Botines
+                                                                                                                        Nike
+                                                                                                                        Mercurial
+                                                                                                                        Vapor
+                                                                                                                        14
+                                                                                                                        Academy
+                                                                                                                        Tf
+                                                                                                                </h5>
+                                                                                                                <p
+                                                                                                                        class="card-text">
+                                                                                                                        Cantidad:
+                                                                                                                        <button
+                                                                                                                                class="btn btn-primary btn-sm"><i
+                                                                                                                                        class="fa-solid fa-minus"></i></button>
+                                                                                                                        1
+                                                                                                                        <button
+                                                                                                                                class="btn btn-primary btn-sm"><i
+                                                                                                                                        class="fa-regular fa-plus"></i></button><button
+                                                                                                                                class="btn btn-danger btn-sm"><i
+                                                                                                                                        class="fa-solid fa-trash"></i></button>
+                                                                                                                </p>
+                                                                                                                <p
+                                                                                                                        class="card-text">
+                                                                                                                        $24.999
+                                                                                                                </p>
+                                                                                                        </div>
+                                                                                                </div>
+                                                                                        </div>
+                                                                                </div>
+                                                                        </td>
+                                                                </tr>
+                                                        </tbody>
+                                                </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Seguir
+                                                        comprando</button>
+                                                <button type="button" class="btn btn-primary">Finalizar compra</button>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                <!--/Modal-->
 
-                <h1>ADIDAS</h1>
+                <section class="titulo">
+                        <h1>ADIDAS</h1>
+                </section>
                 <section class="galeriaIndumentaria">
 
-                        <div class="card text-center" style="width: 14rem;">
-                                <a href="./indumentaria/camisetaAS2.html"><img
-                                                src="../assets/indumentaria/camisetas/camisetaAS2.jpg"
-                                                class="card-img-top" alt="camisetaAS2"></a>
-                                <div class="card-body">
-                                        <h5 class="card-title">Camiseta Adidas Messi Selección Argentina
-                                        </h5>
-                                        <p class="card-text">$18000</p>
-                                        <a href="./indumentaria/camisetaAS2.html" class="btn btn-primary">Comprar</a>
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                                <div class="col">
+                                        <div class="card text-center h-100">
+                                                <a href="./indumentaria/camisetaAS2.html"><img
+                                                                src="../assets/indumentaria/camisetas/camisetaAS2.png"
+                                                                class="card-img-top" alt="camisetaAS2"></a>
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Camiseta Adidas Messi Selección Argentina
+                                                        </h5>
+                                                        <p class="card-text">$24.999</p>
+                                                        <a href="./indumentaria/camisetaAS2.html"
+                                                                class="btn btn-primary">Comprar</a>
+                                                </div>
+                                        </div>
                                 </div>
-                        </div>
 
-                        <div class="card text-center" style="width: 14rem;">
-                                <a href="./indumentaria/camisetaAS1.html"><img
-                                                src="../assets/indumentaria/camisetas/camisetaAS1.jpg"
-                                                class="card-img-top" alt="camisetaAS1"></a>
-                                <div class="card-body">
-                                        <h5 class="card-title">Camiseta Adidas Selección Argentina</h5>
-                                        <p class="card-text">$18000</p>
-                                        <a href="./indumentaria/camisetaAS1.html" class="btn btn-primary">Comprar</a>
+                                <div class="col">
+                                        <div class="card text-center h-100">
+                                                <a href="./indumentaria/camisetaAS1.html"><img
+                                                                src="../assets/indumentaria/camisetas/camisetaAS1.png"
+                                                                class="card-img-top" alt="camisetaAS1"></a>
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Camiseta Adidas Alternativa Selección
+                                                                Argentina 2022</h5>
+                                                        <p class="card-text">$21.999</p>
+                                                        <a href="./indumentaria/camisetaAS1.html"
+                                                                class="btn btn-primary">Comprar</a>
+                                                </div>
+                                        </div>
                                 </div>
-                        </div>
 
-                        <div class="card text-center" style="width: 14rem;">
-                                <a href="./indumentaria/camisetaAB.html"><img
-                                                src="../assets/indumentaria/camisetas/camisetaAB.jpeg"
-                                                class="card-img-top" alt="camisetaAB"></a>
-                                <div class="card-body">
-                                        <h5 class="card-title">Camiseta adidas Boca Juniors Local 2021</h5>
-                                        <p class="card-text">$18000</p>
-                                        <a href="./indumentaria/camisetaAB.html" class="btn btn-primary">Comprar</a>
+                                <div class="col">
+                                        <div class="card text-center h-100">
+                                                <a href="./indumentaria/camisetaAB.html"><img
+                                                                src="../assets/indumentaria/camisetas/camisetaAB.png"
+                                                                class="card-img-top" alt="camisetaAB"></a>
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Camiseta Adidas Boca Juniors Local 2021
+                                                        </h5>
+                                                        <p class="card-text">$16.499</p>
+                                                        <a href="./indumentaria/camisetaAB.html"
+                                                                class="btn btn-primary">Comprar</a>
+                                                </div>
+                                        </div>
+
                                 </div>
-                        </div>
 
+                                <div class="col">
+                                        <div class="card text-center h-100">
+                                                <a href="./indumentaria/camisetaAS3.html"><img
+                                                                src="../assets/indumentaria/camisetas/camisetaAS3.png"
+                                                                class="card-img-top" alt="camisetaAS3"></a>
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Camiseta Adidas Titular Selección
+                                                                Argentina 2022</h5>
+                                                        <p class="card-text">$21.999</p>
+                                                        <a href="./indumentaria/camisetaAS3.html"
+                                                                class="btn btn-primary">Comprar</a>
+                                                </div>
+                                        </div>
 
-                        <div class="card text-center" style="width: 14rem;">
-                                <a href="./indumentaria/camisetaAS3.html"><img
-                                                src="../assets/indumentaria/camisetas/camisetaAS3.jpg"
-                                                class="card-img-top" alt="camisetaAS3"></a>
-                                <div class="card-body">
-                                        <h5 class="card-title">Camiseta Adidas Titular Selección Argentina 2022</h5>
-                                        <p class="card-text">$18000</p>
-                                        <a href="./indumentaria/camisetaAS3.html" class="btn btn-primary">Comprar</a>
                                 </div>
-                        </div>
 
-                        <div class="card text-center" style="width: 14rem;">
-                                <a href="./indumentaria/camisetaGN.html"><img
-                                                src="../assets/indumentaria/camisetas/camisetaGN.jpeg"
-                                                class="card-img-top" alt="camisetaGN"></a>
-                                <div class="card-body">
-                                        <h5 class="card-title">Camiseta Givova Newell's Old Boys Alternativa</h5>
-                                        <p class="card-text">$18000</p>
-                                        <a href="./indumentaria/camisetaGN.html" class="btn btn-primary">Comprar</a>
+                                <div class="col">
+                                        <div class="card text-center h-100">
+                                                <a href="./indumentaria/mediasA1.html"><img
+                                                                src="../assets/indumentaria/medias/mediasA1.png"
+                                                                class="card-img-top" alt="mediasA1"></a>
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Medias Adidas Amarillas Stadium Futbol
+                                                        </h5>
+                                                        <p class="card-text">$8.000</p>
+                                                        <a href="./indumentaria/mediasA1.html"
+                                                                class="btn btn-primary">Comprar</a>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="col">
+                                        <div class="card text-center h-100">
+                                                <a href="./indumentaria/mediasA2.html"><img
+                                                                src="../assets/indumentaria/medias/mediasA2.png"
+                                                                class="card-img-top" alt="mediasA2"></a>
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Medias Adidas Negras Stadium Futbol
+                                                        </h5>
+                                                        <p class="card-text">$8.000</p>
+                                                        <a href="../pages/indumentaria/mediasA2.html"
+                                                                class="btn btn-primary">Comprar</a>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="col">
+                                        <div class="card text-center h-100">
+                                                <a href="./indumentaria/mediasA3.html"><img
+                                                                src="../assets/indumentaria/medias/mediasA3.png"
+                                                                class="card-img-top" alt="mediasA3"></a>
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Medias Adidas Blancas Stadium Futbol
+                                                        </h5>
+                                                        <p class="card-text">$8.000</p>
+                                                        <a href="./indumentaria/mediasA3.html"
+                                                                class="btn btn-primary">Comprar</a>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="col">
+                                        <div class="card text-center h-100">
+                                                <a href="./indumentaria/mediasAS1.html"><img
+                                                                src="../assets/indumentaria/medias/mediasAS1.png"
+                                                                class="card-img-top" alt="mediasAS1"></a>
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Medias Adidas Alternativa Selección
+                                                                Argentina
+                                                        </h5>
+                                                        <p class="card-text">$9.999</p>
+                                                        <a href="./indumentaria/mediasAS1.html"
+                                                                class="btn btn-primary">Comprar</a>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="col">
+                                        <div class="card text-center h-100">
+                                                <a href="./indumentaria/mediasAS3.html"><img
+                                                                src="../assets/indumentaria/medias/mediasAS3.png"
+                                                                class="card-img-top" alt="mediasS3"></a>
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Medias Adidas Titular Selección Argentina
+                                                        </h5>
+                                                        <p class="card-text">$9.999</p>
+                                                        <a href="./indumentaria/mediasAS3.html"
+                                                                class="btn btn-primary">Comprar</a>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="col">
+                                        <div class="card text-center h-100">
+                                                <a href="./indumentaria/shortAB.html"><img
+                                                                src="../assets/indumentaria/shorts/shortAB.png"
+                                                                class="card-img-top" alt="shortAB"></a>
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Short Adidas Boca Juniors
+                                                        </h5>
+                                                        <p class="card-text">$11.200</p>
+                                                        <a href="./indumentaria/shortAB.html"
+                                                                class="btn btn-primary">Comprar</a>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="col">
+                                        <div class="card text-center h-100">
+                                                <a href="./indumentaria/shortAR.html"><img
+                                                                src="../assets/indumentaria/shorts/shortAR.png"
+                                                                class="card-img-top" alt="shortAR"></a>
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Short Adidas River Plate
+                                                        </h5>
+                                                        <p class="card-text">$11.500</p>
+                                                        <a href="./indumentaria/shortAR.html"
+                                                                class="btn btn-primary">Comprar</a>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="col">
+                                        <div class="card text-center h-100">
+                                                <a href="./indumentaria/shortAS2.html"><img
+                                                                src="../assets/indumentaria/shorts/shortAS2.png"
+                                                                class="card-img-top" alt="shortAS2"></a>
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Short Adidas Titular Selección Argentina
+                                                                2022 Negro
+                                                        </h5>
+                                                        <p class="card-text">$15.999</p>
+                                                        <a href="./indumentaria/shortAS2.html"
+                                                                class="btn btn-primary">Comprar</a>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="col">
+                                        <div class="card text-center h-100">
+                                                <a href="./indumentaria/shortAS3.html"><img
+                                                                src="../assets/indumentaria/shorts/shortAS3.png"
+                                                                class="card-img-top" alt="shortAS3"></a>
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Short Adidas Titular Selección Argentina
+                                                                2022 Blanco
+                                                        </h5>
+                                                        <p class="card-text">$15.999</p>
+                                                        <a href="./indumentaria/shortAS3.html"
+                                                                class="btn btn-primary">Comprar</a>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="col">
+                                        <div class="card text-center h-100">
+                                                <a href="./botines/botinA1.html"><img
+                                                                src="../assets/botines/botinA1-2.png"
+                                                                class="card-img-top" alt="botinA1"></a>
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Botines adidas Copa Sense.3 Moqueta
+                                                        </h5>
+                                                        <p class="card-text">$28.700</p>
+                                                        <a href="./botines/botinA1.html"
+                                                                class="btn btn-primary">Comprar</a>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="col">
+                                        <div class="card text-center h-100">
+                                                <a href="./botines/botinA2.html"><img
+                                                                src="../assets/botines/botinA2-2.png"
+                                                                class="card-img-top" alt="botinA2"></a>
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Botines adidas X Speedflow.3 Academy</h5>
+                                                        <p class="card-text">$26.500</p>
+                                                        <a href="./botines/botinA2.html"
+                                                                class="btn btn-primary">Comprar</a>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="col">
+                                        <div class="card text-center h-100">
+                                                <a href="./botines/botinA3.html"><img
+                                                                src="../assets/botines/botinA3-2.png"
+                                                                class="card-img-top" alt="botinA3"></a>
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Botines adidas X Speedportal.1 Fg</h5>
+                                                        <p class="card-text">$37.699</p>
+                                                        <a href="./botines/botinA3.html"
+                                                                class="btn btn-primary">Comprar</a>
+                                                </div>
+                                        </div>
                                 </div>
                         </div>
 
                 </section>
-
         </main>
 
         <footer>

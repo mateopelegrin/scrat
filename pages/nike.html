@@ -25,7 +25,7 @@
 
 <body>
 
-        <header id="inicio">
+        <header>
                 <!--NavBar-->
                 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
                         <div class="container-fluid">
@@ -39,7 +39,7 @@
                                 <div class="collapse navbar-collapse" id="navbarColor01">
                                         <ul class="navbar-nav me-auto">
                                                 <li class="nav-item">
-                                                        <a class="nav-link active" href="../index.html">Inicio
+                                                        <a class="nav-link" href="../index.html">Inicio
                                                                 <span class="visually-hidden">(current)</span>
                                                         </a>
                                                 </li>
@@ -68,72 +68,210 @@
 
         </header>
 
-        <main>
+        <main id="inicio">
 
                 <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                                <div class="modal-content">
+                                        <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito de compras
+                                                </h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                                <table class="table">
+                                                        <tbody>
+                                                                <tr>
+                                                                        <td>
+                                                                                <div class="card mb-3"
+                                                                                        style="max-width: 540px;">
+                                                                                        <div class="row g-0">
+                                                                                                <div class="col-md-4">
+                                                                                                        <img src="../assets/botines/botinN2-2.png"
+                                                                                                                class="img-fluid"
+                                                                                                                alt="botinN2">
+                                                                                                </div>
+                                                                                                <div class="col-md-8">
+                                                                                                        <div
+                                                                                                                class="card-body">
+                                                                                                                <h5
+                                                                                                                        class="card-title">
+                                                                                                                        Botines
+                                                                                                                        Nike
+                                                                                                                        Mercurial
+                                                                                                                        Vapor
+                                                                                                                        14
+                                                                                                                        Academy
+                                                                                                                        Tf
+                                                                                                                </h5>
+                                                                                                                <p
+                                                                                                                        class="card-text">
+                                                                                                                        Cantidad:
+                                                                                                                        <button
+                                                                                                                                class="btn btn-primary btn-sm"><i
+                                                                                                                                        class="fa-solid fa-minus"></i></button>
+                                                                                                                        1
+                                                                                                                        <button
+                                                                                                                                class="btn btn-primary btn-sm"><i
+                                                                                                                                        class="fa-regular fa-plus"></i></button><button
+                                                                                                                                class="btn btn-danger btn-sm"><i
+                                                                                                                                        class="fa-solid fa-trash"></i></button>
+                                                                                                                </p>
+                                                                                                                <p
+                                                                                                                        class="card-text">
+                                                                                                                        $24.999
+                                                                                                                </p>
+                                                                                                        </div>
+                                                                                                </div>
+                                                                                        </div>
+                                                                                </div>
+                                                                        </td>
+                                                                </tr>
+                                                        </tbody>
+                                                </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Seguir
+                                                        comprando</button>
+                                                <button type="button" class="btn btn-primary">Finalizar compra</button>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                <!--/Modal-->
 
-                <h1>NIKE</h1>
+                <section class="titulo">
+                        <h1>NIKE</h1>
+                </section>
                 <section class="galeriaIndumentaria">
 
-                        <div class="card text-center" style="width: 14rem;">
-                                <a href="./indumentaria/camisetaAS2.html"><img
-                                                src="../assets/indumentaria/camisetas/camisetaAS2.jpg"
-                                                class="card-img-top" alt="camisetaAS2"></a>
-                                <div class="card-body">
-                                        <h5 class="card-title">Camiseta Adidas Messi Selección Argentina
-                                        </h5>
-                                        <p class="card-text">$18000</p>
-                                        <a href="./indumentaria/camisetaAS2.html" class="btn btn-primary">Comprar</a>
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                                <div class="col">
+                                        <div class="card text-center h-100">
+                                                <a href="./indumentaria/camisetaNF.html"><img
+                                                                src="../assets/indumentaria/camisetas/camisetaNF.png"
+                                                                class="card-img-top" alt="camisetaNF"></a>
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Camiseta Nike Selección de Francia 2022
+                                                        </h5>
+                                                        <p class="card-text">$18.799</p>
+                                                        <a href="./indumentaria/camisetaNF.html"
+                                                                class="btn btn-primary">Comprar</a>
+                                                </div>
+                                        </div>
                                 </div>
-                        </div>
 
-                        <div class="card text-center" style="width: 14rem;">
-                                <a href="./indumentaria/camisetaAS1.html"><img
-                                                src="../assets/indumentaria/camisetas/camisetaAS1.jpg"
-                                                class="card-img-top" alt="camisetaAS1"></a>
-                                <div class="card-body">
-                                        <h5 class="card-title">Camiseta Adidas Selección Argentina</h5>
-                                        <p class="card-text">$18000</p>
-                                        <a href="./indumentaria/camisetaAS1.html" class="btn btn-primary">Comprar</a>
+                                <div class="col">
+                                        <div class="card text-center h-100">
+                                                <a href="./indumentaria/camisetaNBr.html"><img
+                                                                src="../assets/indumentaria/camisetas/camisetaNBr.png"
+                                                                class="card-img-top" alt="camisetaNBr"></a>
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Camiseta Nike Selección de Brasil 2022
+                                                        </h5>
+                                                        <p class="card-text">$21.999</p>
+                                                        <a href="./indumentaria/camisetaNBr.html"
+                                                                class="btn btn-primary">Comprar</a>
+                                                </div>
+                                        </div>
                                 </div>
-                        </div>
 
-                        <div class="card text-center" style="width: 14rem;">
-                                <a href="./indumentaria/camisetaAB.html"><img
-                                                src="../assets/indumentaria/camisetas/camisetaAB.jpeg"
-                                                class="card-img-top" alt="camisetaAB"></a>
-                                <div class="card-body">
-                                        <h5 class="card-title">Camiseta adidas Boca Juniors Local 2021</h5>
-                                        <p class="card-text">$18000</p>
-                                        <a href="./indumentaria/camisetaAB.html" class="btn btn-primary">Comprar</a>
+                                <div class="col">
+                                        <div class="card text-center h-100">
+                                                <a href="./indumentaria/mediasN1.html"><img
+                                                                src="../assets/indumentaria/medias/mediasN1.png"
+                                                                class="card-img-top" alt="mediasN1"></a>
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Medias Nike Negras Stadium Futbol
+                                                        </h5>
+                                                        <p class="card-text">$8.700</p>
+                                                        <a href="./indumentaria/mediasN1.html"
+                                                                class="btn btn-primary">Comprar</a>
+                                                </div>
+                                        </div>
                                 </div>
-                        </div>
 
-
-                        <div class="card text-center" style="width: 14rem;">
-                                <a href="./indumentaria/camisetaAS3.html"><img
-                                                src="../assets/indumentaria/camisetas/camisetaAS3.jpg"
-                                                class="card-img-top" alt="camisetaAS3"></a>
-                                <div class="card-body">
-                                        <h5 class="card-title">Camiseta Adidas Titular Selección Argentina 2022</h5>
-                                        <p class="card-text">$18000</p>
-                                        <a href="./indumentaria/camisetaAS3.html" class="btn btn-primary">Comprar</a>
+                                <div class="col">
+                                        <div class="card text-center h-100">
+                                                <a href="./indumentaria/shortNL.html"><img
+                                                                src="../assets/indumentaria/shorts/shortNL.png"
+                                                                class="card-img-top" alt="shortNL"></a>
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Short Nike Liverpool Titular 2022
+                                                        </h5>
+                                                        <p class="card-text">$9.999</p>
+                                                        <a href="./indumentaria/shortNL.html"
+                                                                class="btn btn-primary">Comprar</a>
+                                                </div>
+                                        </div>
                                 </div>
-                        </div>
 
-                        <div class="card text-center" style="width: 14rem;">
-                                <a href="./indumentaria/camisetaGN.html"><img
-                                                src="../assets/indumentaria/camisetas/camisetaGN.jpeg"
-                                                class="card-img-top" alt="camisetaGN"></a>
-                                <div class="card-body">
-                                        <h5 class="card-title">Camiseta Givova Newell's Old Boys Alternativa</h5>
-                                        <p class="card-text">$18000</p>
-                                        <a href="./indumentaria/camisetaGN.html" class="btn btn-primary">Comprar</a>
+                                <div class="col">
+                                        <div class="card text-center h-100">
+                                                <a href="./botines/botinN1.html"><img
+                                                                src="../assets/botines/botinN1-2.png"
+                                                                class="card-img-top" alt="botinN1"></a>
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Botines Nike Legend 9 Academy FgMg</h5>
+                                                        <p class="card-text">$22.999</p>
+                                                        <a href="./botines/botinN1.html"
+                                                                class="btn btn-primary">Comprar</a>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="col">
+                                        <div class="card text-center h-100">
+                                                <a href="./botines/botinN2.html"><img
+                                                                src="../assets/botines/botinN2-2.png"
+                                                                class="card-img-top" alt="botinN2"></a>
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Botines Nike Mercurial Vapor 14 Academy
+                                                                Tf</h5>
+                                                        <p class="card-text">$24.999</p>
+                                                        <a href="./botines/botinN2.html"
+                                                                class="btn btn-primary">Comprar</a>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="col">
+                                        <div class="card text-center h-100">
+                                                <a href="./botines/botinN3.html"><img
+                                                                src="../assets/botines/botinN3-2.png"
+                                                                class="card-img-top" alt="botinN3"></a>
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Botines Nike Mercurial Vapor 14 Elite Fg2
+                                                        </h5>
+                                                        <p class="card-text">$45.999</p>
+                                                        <a href="./botines/botinN3.html"
+                                                                class="btn btn-primary">Comprar</a>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="col">
+                                        <div class="card text-center h-100">
+                                                <a href="./botines/botinN4.html"><img
+                                                                src="../assets/botines/botinN4-2.png"
+                                                                class="card-img-top" alt="botinN4"></a>
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Botines Nike Phantom Gt2 Academy Tf</h5>
+                                                        <p class="ptachada card-text">$20.350</p>
+                                                        <p class="card-text">$16.999</p>
+                                                        <a href="./botines/botinN4.html"
+                                                                class="btn btn-primary">Comprar</a>
+                                                </div>
+                                        </div>
                                 </div>
                         </div>
 
                 </section>
-
         </main>
 
         <footer>

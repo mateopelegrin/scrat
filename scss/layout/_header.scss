@@ -1,4 +1,10 @@
-/*icono header*/
-header img {
-@include wyh($cincuenta, $cincuenta)
+/*header*/
+header{
+    position: fixed;
+    width: $cienporcien;
+    top: 0;
+    z-index: 1030;
+    img {
+        @include wyh($cincuenta, $cincuenta)
+        }
 }
