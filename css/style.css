@@ -336,10 +336,14 @@ header {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-top: 20px; }
+    margin-top: 20px;
+    height: 50px; }
     .novedadesP h5 {
       font-size: small;
-      margin-top: 20px; }
+      margin-top: 20px;
+      background-color: #378dfc;
+      padding: 5px;
+      color: #fff; }
     .novedadesP a:hover {
       opacity: 0.5; }
     .novedadesP article {
@@ -358,7 +362,10 @@ header {
     margin-bottom: 3px;
     font-size: larger; }
   .novedadesP h5 {
-    font-size: medium; } }
+    font-size: medium;
+    background-color: #378dfc;
+    padding: 5px;
+    color: #fff; } }
 
 @media screen and (min-width: 1024px) {
   .compra {
@@ -405,7 +412,8 @@ header {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-top: 20px; }
+    margin-top: 20px;
+    margin-bottom: 150px; }
     .novedadesP h5 {
       font-size: large;
       background-color: #378dfc;
