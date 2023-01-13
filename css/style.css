@@ -1,33 +1,40 @@
 /*boton anadir carro*/
 .anadirCarro button {
   width: 100%;
-  margin-top: 3px; }
+  margin-top: 3px;
+}
 
 /*reset css*/
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 /*tipografias*/
 * {
   font-family: 'Fredoka One', cursive;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+}
 
 /*titulos principales*/
 h1 {
   padding: 10px;
-  text-align: center; }
+  text-align: center;
+}
 
 /*header*/
 header {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1030; }
-  header img {
-    width: 50px;
-    height: 50px; }
+  z-index: 1030;
+}
+
+header img {
+  width: 50px;
+  height: 50px;
+}
 
 /*INICIO*/
 /*publicidades*/
@@ -35,12 +42,16 @@ header {
   .carousel-inner img {
     height: 200px;
     width: 100%;
-    padding-top: 70px; } }
+    padding-top: 70px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .carousel-inner img {
     height: 300px;
-    width: 100%; } }
+    width: 100%;
+  }
+}
 
 /*novedades*/
 @media screen and (min-width: 320px) {
@@ -49,23 +60,33 @@ header {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-bottom: 50px; }
-    .novedades h5 {
-      margin-top: 40px;
-      margin-bottom: 20px;
-      font-size: small;
-      background-color: #378dfc;
-      padding: 5px;
-      color: #fff; }
-    .novedades a:hover {
-      opacity: 0.5; }
-    .novedades article {
-      display: flex;
-      justify-content: space-around;
-      height: 80px; }
-      .novedades article img {
-        width: 100%;
-        height: 100%; } }
+    margin-bottom: 50px;
+  }
+
+  .novedades h5 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: small;
+    background-color: #378dfc;
+    padding: 5px;
+    color: #fff;
+  }
+
+  .novedades a:hover {
+    opacity: 0.5;
+  }
+
+  .novedades article {
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+  }
+
+  .novedades article img {
+    width: 100%;
+    height: 100%;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .novedades {
@@ -73,23 +94,33 @@ header {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-bottom: 50px; }
-    .novedades h5 {
-      margin-top: 40px;
-      margin-bottom: 20px;
-      font-size: medium;
-      background-color: #378dfc;
-      padding: 5px;
-      color: #fff; }
-    .novedades a:hover {
-      opacity: 0.5; }
-    .novedades article {
-      display: flex;
-      justify-content: space-around;
-      height: 150px; }
-      .novedades article img {
-        width: 100%;
-        height: 100%; } }
+    margin-bottom: 50px;
+  }
+
+  .novedades h5 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: medium;
+    background-color: #378dfc;
+    padding: 5px;
+    color: #fff;
+  }
+
+  .novedades a:hover {
+    opacity: 0.5;
+  }
+
+  .novedades article {
+    display: flex;
+    justify-content: space-around;
+    height: 150px;
+  }
+
+  .novedades article img {
+    width: 100%;
+    height: 100%;
+  }
+}
 
 /*secciones*/
 @media screen and (min-width: 320px) {
@@ -98,41 +129,59 @@ header {
     flex-wrap: wrap;
     width: 100%;
     height: 100px;
-    background-color: black; }
-    .secciones .camisetas {
-      background-image: url("../assets/logos-y-publicidades/camiseta-publi.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 50%; }
-      .secciones .camisetas a {
-        text-decoration: none;
-        font-size: 10px;
-        color: white; }
-    .secciones .camisetas:hover {
-      opacity: 0.7; }
-      .secciones .camisetas:hover a {
-        font-size: 12px; }
-    .secciones .botines {
-      background-image: url("../assets/logos-y-publicidades/botines-publi.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 50%; }
-      .secciones .botines a {
-        text-decoration: none;
-        font-size: 10px;
-        color: white; }
-    .secciones .botines:hover {
-      opacity: 0.7; }
-      .secciones .botines:hover a {
-        font-size: 12px; } }
+    background-color: black;
+  }
+
+  .secciones .camisetas {
+    background-image: url("../assets/logos-y-publicidades/camiseta-publi.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+
+  .secciones .camisetas a {
+    text-decoration: none;
+    font-size: 10px;
+    color: white;
+  }
+
+  .secciones .camisetas:hover {
+    opacity: 0.7;
+  }
+
+  .secciones .camisetas:hover a {
+    font-size: 12px;
+  }
+
+  .secciones .botines {
+    background-image: url("../assets/logos-y-publicidades/botines-publi.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+
+  .secciones .botines a {
+    text-decoration: none;
+    font-size: 10px;
+    color: white;
+  }
+
+  .secciones .botines:hover {
+    opacity: 0.7;
+  }
+
+  .secciones .botines:hover a {
+    font-size: 12px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .secciones {
@@ -140,83 +189,116 @@ header {
     flex-wrap: wrap;
     width: 100%;
     height: 250px;
-    background-color: black; }
-    .secciones .camisetas {
-      background-image: url(../assets/logos-y-publicidades/camiseta-publi.png);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 50%; }
-      .secciones .camisetas a {
-        text-decoration: none;
-        font-size: 30px;
-        color: white; }
-    .secciones .camisetas:hover {
-      opacity: 0.7; }
-      .secciones .camisetas:hover a {
-        font-size: 34px; }
-    .secciones .botines {
-      background-image: url(../assets/logos-y-publicidades/botines-publi.png);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 50%; }
-      .secciones .botines a {
-        text-decoration: none;
-        font-size: 30px;
-        color: white; }
-    .secciones .botines:hover {
-      opacity: 0.7; }
-      .secciones .botines:hover a {
-        font-size: 34px; } }
+    background-color: black;
+  }
+
+  .secciones .camisetas {
+    background-image: url(../assets/logos-y-publicidades/camiseta-publi.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+
+  .secciones .camisetas a {
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+  }
+
+  .secciones .camisetas:hover {
+    opacity: 0.7;
+  }
+
+  .secciones .camisetas:hover a {
+    font-size: 34px;
+  }
+
+  .secciones .botines {
+    background-image: url(../assets/logos-y-publicidades/botines-publi.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+
+  .secciones .botines a {
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+  }
+
+  .secciones .botines:hover {
+    opacity: 0.7;
+  }
+
+  .secciones .botines:hover a {
+    font-size: 34px;
+  }
+}
 
 /*marcas*/
 .marcas {
   display: flex;
   justify-content: space-around;
   padding-top: 40px;
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+}
 
 @media screen and (min-width: 320px) {
   .marcas img {
     width: 50px;
-    height: 50px; } }
+    height: 50px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .marcas img {
     width: 80px;
-    height: 80px; } }
+    height: 80px;
+  }
+}
 
 @media screen and (min-width: 1024px) {
   .marcas img {
     width: 100px;
-    height: 100px; } }
+    height: 100px;
+  }
+}
 
 /*sobre nosotros*/
 .sobreNos {
   display: flex;
-  flex-direction: column; }
-  .sobreNos .nosotros,
-  .sobreNos .mapa {
-    width: 100%;
-    margin: 5px; }
-    .sobreNos .nosotros h3,
-    .sobreNos .mapa h3 {
-      font-size: medium; }
-    .sobreNos .nosotros .redes img,
-    .sobreNos .mapa .redes img {
-      width: 40px;
-      margin: 3px; }
+  flex-direction: column;
+}
+
+.sobreNos .nosotros,
+.sobreNos .mapa {
+  width: 100%;
+  margin: 5px;
+}
+
+.sobreNos .nosotros h3,
+.sobreNos .mapa h3 {
+  font-size: medium;
+}
+
+.sobreNos .nosotros .redes img,
+.sobreNos .mapa .redes img {
+  width: 40px;
+  margin: 3px;
+}
 
 /*GALERIA INDUMENTARIA BOTINES Y SALE*/
 .titulo {
-  padding-top: 70px; }
+  padding-top: 70px;
+}
 
 .galeriaIndumentaria {
   display: flex;
@@ -226,199 +308,288 @@ header {
   gap: 20px;
   padding-bottom: 20px;
   margin-left: 10px;
-  margin-right: 10px; }
-  .galeriaIndumentaria img:hover {
-    scale: 1.2; }
-  .galeriaIndumentaria .ptachada {
-    text-decoration: line-through;
-    color: red; }
+  margin-right: 10px;
+}
+
+.galeriaIndumentaria img:hover {
+  scale: 1.2;
+}
+
+.galeriaIndumentaria .ptachada {
+  text-decoration: line-through;
+  color: red;
+}
 
 /*ASISTENCIA*/
 .cambio,
 .contactate,
 .redesSociales {
-  margin: 10px; }
+  margin: 10px;
+}
 
 .cambio {
   display: flex;
   flex-direction: column;
   align-content: flex-start;
-  padding-top: 70px; }
-  .cambio h4 .cambio p {
-    font-size: larger;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 30px; }
-  .cambio h5 {
-    font-size: medium;
-    margin-left: 5px; }
-  .cambio p {
-    text-align: left;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 5px;
-    font-size: smaller; }
+  padding-top: 70px;
+}
+
+.cambio h4 .cambio p {
+  font-size: larger;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.cambio h5 {
+  font-size: medium;
+  margin-left: 5px;
+}
+
+.cambio p {
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  font-size: smaller;
+}
 
 .contactate h4 .cambio p {
   font-size: larger;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+}
 
 .contactate h5 {
   font-size: medium;
-  margin-left: 5px; }
+  margin-left: 5px;
+}
 
 .contactate p {
   text-align: left;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 5px;
-  font-size: smaller; }
+  font-size: smaller;
+}
 
 .redesSociales .redesA {
   display: flex;
   justify-content: left;
-  padding: 15px; }
-  .redesSociales .redesA a {
-    display: flex;
-    padding-left: 15px;
-    padding-right: 30px;
-    width: 30px;
-    height: 30px; }
-  .redesSociales .redesA p {
-    text-align: left;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 5px;
-    font-size: smaller; }
+  padding: 15px;
+}
+
+.redesSociales .redesA a {
+  display: flex;
+  padding-left: 15px;
+  padding-right: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+.redesSociales .redesA p {
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  font-size: smaller;
+}
 
 /*PRODUCTO*/
 @media screen and (min-width: 320px) {
   .compra {
     display: flex;
     flex-direction: column;
-    padding-top: 70px; }
-    .compra .producto {
-      width: 100%; }
-      .compra .producto img {
-        width: 100%;
-        height: 100%; }
+    padding-top: 70px;
+    margin-bottom: 100px;
+  }
+
+  .compra .producto {
+    width: 100%;
+  }
+
+  .compra .producto img {
+    width: 100%;
+    height: 100%;
+  }
+
   .infoProducto {
     display: flex;
     flex-direction: column;
-    width: 100%; }
-    .infoProducto h3 {
-      text-align: left;
-      margin-top: 3px;
-      margin-bottom: 3px;
-      font-size: medium; }
-    .infoProducto img {
-      width: 50px; }
-    .infoProducto b, .infoProducto p {
-      text-align: left;
-      margin-top: 10px; }
-    .infoProducto p {
-      margin-top: 10px; }
-    .infoProducto .talles {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly; }
-      .infoProducto .talles input {
-        border-radius: 10px;
-        border-color: black;
-        margin: 3px;
-        width: 31%; }
-      .infoProducto .talles input:focus {
-        color: red; }
+    width: 100%;
+    margin-left: 3px;
+  }
+
+  .infoProducto h3 {
+    text-align: left;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: medium;
+  }
+
+  .infoProducto img {
+    width: 50px;
+  }
+
+  .infoProducto b,
+  .infoProducto p {
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .infoProducto p {
+    margin-top: 10px;
+  }
+
+  .infoProducto .talles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .infoProducto .talles input {
+    border-radius: 10px;
+    border-color: black;
+    margin: 3px;
+    width: 31%;
+  }
+
+  .infoProducto .talles input:focus {
+    color: red;
+  }
+
   .novedadesP {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     margin-top: 20px;
-    height: 50px; }
-    .novedadesP h5 {
-      font-size: small;
-      margin-top: 20px;
-      background-color: #378dfc;
-      padding: 5px;
-      color: #fff; }
-    .novedadesP a:hover {
-      opacity: 0.5; }
-    .novedadesP article {
-      display: flex;
-      justify-content: space-around;
-      height: 150px;
-      margin-top: 20px; }
-    .novedadesP img {
-      width: 100%;
-      height: 100%; } }
+    height: 50px;
+    margin-bottom: 100px;
+  }
+
+  .novedadesP h5 {
+    font-size: small;
+    margin-top: 20px;
+    background-color: #378dfc;
+    padding: 5px;
+    color: #fff;
+  }
+
+  .novedadesP a:hover {
+    opacity: 0.5;
+  }
+
+  .novedadesP article {
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    margin-top: 20px;
+  }
+
+  .novedadesP img {
+    width: 100%;
+    height: 100%;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .infoProducto h3 {
     text-align: left;
     margin-top: 3px;
     margin-bottom: 3px;
-    font-size: larger; }
+    font-size: larger;
+  }
+
   .novedadesP h5 {
     font-size: medium;
     background-color: #378dfc;
     padding: 5px;
-    color: #fff; } }
+    color: #fff;
+  }
+}
 
 @media screen and (min-width: 1024px) {
   .compra {
     display: flex;
     flex-direction: row;
-    padding-top: 80px; }
-    .compra .producto {
-      width: 50%; }
-      .compra .producto img {
-        width: 100%;
-        height: 100%; }
-    .compra .infoProducto {
-      display: flex;
-      flex-direction: column;
-      width: 50%;
-      padding-top: 40px; }
-      .compra .infoProducto h3 {
-        font-size: larger;
-        text-align: left;
-        padding-bottom: 10px; }
-      .compra .infoProducto p {
-        text-align: left; }
-      .compra .infoProducto img {
-        width: 50px; }
-      .compra .infoProducto .talles {
-        display: flex;
-        flex-wrap: wrap;
-        width: 300px;
-        justify-content: left; }
-        .compra .infoProducto .talles input {
-          border-radius: 10px;
-          border-color: black; }
-        .compra .infoProducto .talles input:focus {
-          color: red; }
-      .compra .infoProducto .anadirCarro {
-        display: flex;
-        width: 300px;
-        justify-content: center; }
-      .compra .infoProducto .ptachada {
-        text-decoration: line-through;
-        color: red; }
+    padding-top: 80px;
+  }
+
+  .compra .producto {
+    width: 50%;
+  }
+
+  .compra .producto img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .compra .infoProducto {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-top: 40px;
+  }
+
+  .compra .infoProducto h3 {
+    font-size: larger;
+    text-align: left;
+    padding-bottom: 10px;
+  }
+
+  .compra .infoProducto p {
+    text-align: left;
+  }
+
+  .compra .infoProducto img {
+    width: 50px;
+  }
+
+  .compra .infoProducto .talles {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    justify-content: left;
+  }
+
+  .compra .infoProducto .talles input {
+    border-radius: 10px;
+    border-color: black;
+  }
+
+  .compra .infoProducto .talles input:focus {
+    color: red;
+  }
+
+  .compra .infoProducto .anadirCarro {
+    display: flex;
+    width: 300px;
+    justify-content: center;
+  }
+
+  .compra .infoProducto .ptachada {
+    text-decoration: line-through;
+    color: red;
+  }
+
   .novedadesP {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 150px; }
-    .novedadesP h5 {
-      font-size: large;
-      background-color: #378dfc;
-      padding: 5px;
-      color: #fff; } }
+    margin-bottom: 150px;
+  }
+
+  .novedadesP h5 {
+    font-size: large;
+    background-color: #378dfc;
+    padding: 5px;
+    color: #fff;
+  }
+}
 
 @media screen and (min-width: 1024px) {
   .sobreNos {
@@ -427,19 +598,29 @@ header {
     grid-template-columns: 1fr 1fr 2fr;
     grid-template-rows: 1fr;
     margin: 20px;
-    width: auto; }
-    .sobreNos .nosotros {
-      grid-area: nosotros;
-      display: flex;
-      flex-direction: column;
-      margin-right: 10px; }
-      .sobreNos .nosotros .redes {
-        grid-area: nosotros; }
-        .sobreNos .nosotros .redes img {
-          width: 40px;
-          margin: 3px; }
-    .sobreNos .mapa {
-      grid-area: mapa; } }
+    width: auto;
+  }
+
+  .sobreNos .nosotros {
+    grid-area: nosotros;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+  }
+
+  .sobreNos .nosotros .redes {
+    grid-area: nosotros;
+  }
+
+  .sobreNos .nosotros .redes img {
+    width: 40px;
+    margin: 3px;
+  }
+
+  .sobreNos .mapa {
+    grid-area: mapa;
+  }
+}
 
 /*footer*/
 footer {
@@ -447,11 +628,16 @@ footer {
   flex-direction: column;
   text-align: center;
   padding-top: 10px;
-  background-color: #378dfc; }
-  footer a {
-    text-decoration: none;
-    color: blue; }
-  footer p {
-    padding-top: 10px;
-    color: black;
-    text-align: center; }
+  background-color: #378dfc;
+}
+
+footer a {
+  text-decoration: none;
+  color: blue;
+}
+
+footer p {
+  padding-top: 10px;
+  color: black;
+  text-align: center;
+}

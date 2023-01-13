@@ -3,6 +3,7 @@
     .compra {
         @include flex-column;
         padding-top: ($cincuenta+$veinte);
+        margin-bottom: $cien;
 
         .producto {
             width: $cienporcien;
@@ -16,6 +17,7 @@
     .infoProducto {
         @include flex-column;
         width: $cienporcien;
+        margin-left: 3px;
 
         h3 {
             @include h3producto;
@@ -56,6 +58,7 @@
         @include novedadesproducto;
         margin-top: $veinte;
         height: $cincuenta;
+        margin-bottom: $cien;
 
         h5 {
             font-size: small;
@@ -71,7 +74,7 @@
 
         article {
             @include flex-spacearound;
-            height: ($cien+$cincuenta);
+            height: ($cien);
             margin-top: $veinte;
         }
 
