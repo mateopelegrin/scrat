@@ -10,9 +10,10 @@
     align-items: center;
     gap: $veinte;
     padding-bottom: $veinte;
-    @include marginlyr($diez,$diez);
+    @include marginlyr($veinte,$veinte);
+    
     img:hover {
-        scale: 1.2;
+        scale: 1.1;
     }
     .ptachada{
         text-decoration:line-through;
