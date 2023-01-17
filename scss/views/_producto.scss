@@ -68,9 +68,6 @@
             color: #fff;
         }
 
-        a:hover {
-            opacity: 0.5;
-        }
 
         article {
             @include flex-spacearound;
@@ -80,6 +77,27 @@
 
         img {
             @include wyh($cienporcien, $cienporcien);
+        }
+    }
+
+    .novedadesB {
+        @include novedadesproducto;
+        margin-top: $veinte;
+        margin-bottom: ($cincuenta);
+
+        h5 {
+            font-size: large;
+            background-color: $celeste;
+            padding: $cinco;
+            color: #fff;
+        }
+
+        article {
+            @include flex-spacearound;
+        }
+
+        img {
+            @include wyh($cincuenta+$veinte, $cincuenta+$veinte);
         }
     }
 }
@@ -97,7 +115,11 @@
             padding: $cinco;
             color: #fff;
         }
-
+    }
+    .novedadesB{
+        img {
+            @include wyh($cien, $cien);
+        }
     }
 }
 
@@ -175,5 +197,30 @@
             color: #fff;
         }
 
+    }
+
+    .novedadesB {
+        @include novedadesproducto;
+        margin-top: $veinte;
+        margin-bottom: ($cincuenta);
+
+        h5 {
+            font-size: large;
+            background-color: $celeste;
+            padding: $cinco;
+            color: #fff;
+        }
+
+        article {
+            @include flex-spacearound;
+
+            a:hover {
+                opacity: 0.5;
+            }
+
+            img {
+                @include wyh($cien+$cincuenta, $cien+$cincuenta)
+            }
+        }
     }
 }

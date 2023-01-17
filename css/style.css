@@ -347,8 +347,6 @@ header {
       background-color: #378dfc;
       padding: 5px;
       color: #fff; }
-    .novedadesP a:hover {
-      opacity: 0.5; }
     .novedadesP article {
       display: flex;
       justify-content: space-around;
@@ -356,7 +354,25 @@ header {
       margin-top: 20px; }
     .novedadesP img {
       width: 100%;
-      height: 100%; } }
+      height: 100%; }
+  .novedadesB {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px; }
+    .novedadesB h5 {
+      font-size: large;
+      background-color: #378dfc;
+      padding: 5px;
+      color: #fff; }
+    .novedadesB article {
+      display: flex;
+      justify-content: space-around; }
+    .novedadesB img {
+      width: 70px;
+      height: 70px; } }
 
 @media screen and (min-width: 768px) {
   .infoProducto h3 {
@@ -368,7 +384,10 @@ header {
     font-size: medium;
     background-color: #378dfc;
     padding: 5px;
-    color: #fff; } }
+    color: #fff; }
+  .novedadesB img {
+    width: 100px;
+    height: 100px; } }
 
 @media screen and (min-width: 1024px) {
   .compra {
@@ -421,7 +440,27 @@ header {
       font-size: large;
       background-color: #378dfc;
       padding: 5px;
-      color: #fff; } }
+      color: #fff; }
+  .novedadesB {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px; }
+    .novedadesB h5 {
+      font-size: large;
+      background-color: #378dfc;
+      padding: 5px;
+      color: #fff; }
+    .novedadesB article {
+      display: flex;
+      justify-content: space-around; }
+      .novedadesB article a:hover {
+        opacity: 0.5; }
+      .novedadesB article img {
+        width: 150px;
+        height: 150px; } }
 
 @media screen and (min-width: 1024px) {
   .sobreNos {
